@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { BoxDados } from '../box-dados';
 
 @Component({
   selector: 'app-box-menor',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./box-menor.component.css']
 })
 export class BoxMenorComponent implements OnInit {
+
+  @Input() dados: BoxDados;
 
   constructor() { }
 

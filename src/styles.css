@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: #e8e8e8;
+    margin: 0;
+}
+
+.conteudo {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.boxDados {
+    box-shadow: 2px 2px 5px 5px 5px grey;
+}
