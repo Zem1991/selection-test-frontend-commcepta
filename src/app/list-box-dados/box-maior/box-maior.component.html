@@ -1,0 +1,13 @@
+<div>
+  <span class="dadoChave" [ngClass]="{'whiteText': selecionado}">NOME: </span>
+  <span class="dadoValor" [ngClass]="{'whiteText': selecionado}">{{dados.nome}}</span>
+</div>
+<div>
+  <span class="dadoChave" [ngClass]="{'whiteText': selecionado}">CARGO: </span>
+  <span class="dadoValor" [ngClass]="{'whiteText': selecionado}">{{dados.cargo}}</span>
+</div>
+<div>
+  <span class="dadoChave" [ngClass]="{'whiteText': selecionado}">IDADE: </span>
+  <span class="dadoValor" [ngClass]="{'whiteText': selecionado}">{{dados.idade}}</span>
+</div>
+{{dados.foto}}

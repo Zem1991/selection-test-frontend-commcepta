@@ -1,0 +1,12 @@
+<p>
+  list-box-dados works!
+</p>
+
+<div class="listBox">
+  <div *ngIf="selecionado" class="boxDados boxMaior">
+      <app-box-maior [dados]="selecionado" ></app-box-maior>
+  </div>
+  <div *ngFor="let item of listDados">
+    <app-box-menor [dados]="item" [selecionado]="item.id == selecionado.id" (clickEvent)="novaSelecao($event)"></app-box-menor>
+  </div>
+</div>

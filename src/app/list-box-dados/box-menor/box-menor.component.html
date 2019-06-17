@@ -1,0 +1,9 @@
+<div class="boxDados" [ngClass]="{'boxDadosSelected': selecionado}" (click)="Clicked()">
+  <div>
+    <span class="dadoValor" [ngClass]="{'whiteText': selecionado}">{{dados.nome}}</span>
+  </div>
+  <div>
+    <span class="dadoChave" [ngClass]="{'whiteText': selecionado}">{{dados.cargo}}</span>
+  </div>
+  {{dados.foto}}
+</div>

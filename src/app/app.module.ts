@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NavbarModule } from './navbar/navbar.module';
-import { BoxMenorModule } from './box-menor/box-menor.module';
+import { ListBoxDadosModule } from './list-box-dados/list-box-dados.module';
 
 @NgModule({
   declarations: [
@@ -11,8 +12,9 @@ import { BoxMenorModule } from './box-menor/box-menor.module';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     NavbarModule,
-    BoxMenorModule
+    ListBoxDadosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
