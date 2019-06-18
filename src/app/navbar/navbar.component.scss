@@ -1,51 +1,58 @@
-.navbar {
-    background-image: linear-gradient(to right, #4dd1d3, #092330);
-    padding: 1.2rem 0;
+$gradienteInicio: #4dd1d3;
+$gradienteFim: #092330;
+$logomarca: #002a50;
+
+.main-header {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to right, $gradienteInicio, $gradienteFim);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    overflow: hidden;
+.main-nav {
+  display: flex;
+  margin-left: auto;
 }
 
-li {
-    float: right;
+.main-nav ul {
+  display: flex;
+  list-style: none;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 14px 16px;
+.main-nav li {
+  margin-left: 0.9375em;
 }
 
-.logo {
-    float: left;
-    border: 4px solid #002a50;
-    margin: auto;
+.main-nav a {
+  padding-left: 2rem;
+  text-decoration: none;
+  display: block;
+  color: white;
 }
+
+
+//@at-root//@at-root/@at-root//@at-root//@at-root
+
 
 .logomarca {
-    font-weight: bold;
-    font-size: 1.5rem;
-    padding: 0.5rem;
+  border: 4px solid $logomarca;
+  margin: auto;
+
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+
+  mix-blend-mode: darken;
 }
 
 .logomarcaSpace {
-    color: #002a50;
-    padding-left: 1rem;
-    padding-right: 1rem;
+  color: $logomarca;
+  font-weight: bolder;
 }
 
 .logomarcaBox {
-    background-color: #002a50;
-    color: #41b3b4;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.teste{
-    background-color: red;
+  color: white;
+  background-color: $logomarca;
+  mix-blend-mode: darken;
 }
