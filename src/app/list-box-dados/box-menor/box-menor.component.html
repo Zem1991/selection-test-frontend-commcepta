@@ -1,14 +1,12 @@
-<div class="boxDados" [ngClass]="{'boxDadosSelected': selecionado, 'sombra': !selecionado}" (click)="Clicked()">
+<div class="boxMenor boxDados flexCenter" [ngClass]="{'boxDadosSelected': selecionado, 'sombra': !selecionado}" (click)="Clicked()">
   <div>
-    <img class="roundImg" [src]="imgSource" alt="Foto">
-    <div class="numeroPos roundImg dadoValor">
-      {{dados.id}}
-    </div>
+    <a href="#" class="notification">
+      <img class="roundImg" [src]="imgSource" alt="Foto">
+      <span class="badge dadoValor">{{dados.id}}</span>
+    </a>
   </div>
-  <div>
-    <span class="dadoValor" [ngClass]="{'whiteText': selecionado}">{{dados.nome}}</span>
-  </div>
-  <div>
-    <span class="dadoChave" [ngClass]="{'whiteText': selecionado}">{{dados.cargo}}</span>
+  <div class="chaveValor chaveValorDir" style="margin-left: 1.5rem">
+    <div class="dadoValor" [ngClass]="{'whiteText': selecionado}">{{dados.nome}}</div>
+    <div class="dadoChave" [ngClass]="{'whiteText': selecionado}">{{dados.cargo}}</div>
   </div>
 </div>

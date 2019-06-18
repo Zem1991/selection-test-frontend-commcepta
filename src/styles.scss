@@ -9,6 +9,7 @@ $numeroId: #4cd2d1;
 $sombra: grey;
 
 $gridGap: 1.5rem;
+$boxPadding: 1.5rem;
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -30,13 +31,17 @@ body {
 
 .boxDados {
   background-color: $backgroundContent;
-  padding: 2rem;
 }
 
 .boxMaior {
   grid-column-start: 1;
   grid-column-end: 4;
   margin-top: $gridGap;
+  padding: $boxPadding;
+}
+
+.boxMenor {
+  padding: $boxPadding;
 }
 
 .boxDadosSelected {
@@ -67,26 +72,43 @@ body {
   border-radius: 50%;
 }
 
-.ladoLado {
+.notification {
+  text-decoration: none;
+  position: relative;
   display: inline-block;
-  margin: 1.5rem;
+  border-radius: 2px;
+}
+
+.notification .badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 15px;
+
+  font-size: 1.2rem;
+  text-align: center;
+
+  border-radius: 50%;
+  background-color: $numeroId;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+.chaveValor {
   height: 100%;
 }
 
-.numeroPos {
-  background-color: $numeroId;
-  position: relative;
-  right: 0;
-  top: 0;
-  padding: 0.5rem;
-  font-size: 1.2rem;
-  text-align: center;
+.chaveValorEsq {
+  margin-left: 1.5rem;
+  margin-right: 0.5rem;
+  text-align: right;
 }
 
-.clearfix {
-  overflow: auto;
-}
-
-.absolute {
-  position: absolute;
+.chaveValorDir {
+  margin-left: 0.5rem;
+  margin-right: 1.5rem;
+  text-align: left;
 }
