@@ -1,13 +1,19 @@
-<div>
-  <span class="dadoChave" [ngClass]="{'whiteText': selecionado}">NOME: </span>
-  <span class="dadoValor" [ngClass]="{'whiteText': selecionado}">{{dados.nome}}</span>
+<div class="ladoLado">
+  <img class="roundImg" [src]="imgSource" alt="Foto">
 </div>
-<div>
-  <span class="dadoChave" [ngClass]="{'whiteText': selecionado}">CARGO: </span>
-  <span class="dadoValor" [ngClass]="{'whiteText': selecionado}">{{dados.cargo}}</span>
+<div class="ladoLado">
+  <div>
+    <span class="dadoChave" [ngClass]="{'whiteText': selecionado}">NOME: </span>
+    <span class="dadoValor" [ngClass]="{'whiteText': selecionado}">{{dados.nome}}</span>
+  </div>
+  <br>
+  <div>
+    <span class="dadoChave" [ngClass]="{'whiteText': selecionado}">CARGO: </span>
+    <span class="dadoValor" [ngClass]="{'whiteText': selecionado}">{{dados.cargo}}</span>
+  </div>
+  <br>
+  <div>
+    <span class="dadoChave" [ngClass]="{'whiteText': selecionado}">IDADE: </span>
+    <span class="dadoValor" [ngClass]="{'whiteText': selecionado}">{{dados.idade}}</span>
+  </div>
 </div>
-<div>
-  <span class="dadoChave" [ngClass]="{'whiteText': selecionado}">IDADE: </span>
-  <span class="dadoValor" [ngClass]="{'whiteText': selecionado}">{{dados.idade}}</span>
-</div>
-{{dados.foto}}

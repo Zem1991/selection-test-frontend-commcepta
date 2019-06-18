@@ -1,11 +1,12 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 import { BoxDados } from '../box-dados';
+import { pathFotos } from '../list-box-dados.component';
 
 @Component({
   selector: 'app-box-menor',
   templateUrl: './box-menor.component.html',
-  styleUrls: ['./box-menor.component.css']
+  styleUrls: ['./box-menor.component.scss']
 })
 export class BoxMenorComponent implements OnInit {
 
@@ -13,15 +14,12 @@ export class BoxMenorComponent implements OnInit {
   @Input() selecionado: boolean;
   @Output() clickEvent = new EventEmitter();
 
+  imgSource: string;
+
   constructor() { }
 
   ngOnInit() {
-    // function Clicked(){
-    //   this.clickEvent.emit(this.dados);
-    // }
-
-    // document.getElementById('dados')
-    // .addEventListener('click', Clicked)
+    this.imgSource = pathFotos + this.dados.foto;
   }
 
   Clicked() {

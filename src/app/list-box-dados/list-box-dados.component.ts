@@ -3,12 +3,13 @@ import { HttpClient } from '@angular/common/http';
 
 import { BoxDados } from './box-dados';
 
-const pathDados = 'assets/arquivos do teste/Dados/dados.json';
+export const pathDados = 'assets/arquivos do teste/Dados/dados.json';
+export const pathFotos = 'assets/fotos/';
 
 @Component({
   selector: 'app-list-box-dados',
   templateUrl: './list-box-dados.component.html',
-  styleUrls: ['./list-box-dados.component.css']
+  styleUrls: ['./list-box-dados.component.scss']
 })
 export class ListBoxDadosComponent implements OnInit {
 

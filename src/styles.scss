@@ -1,0 +1,88 @@
+/* You can add global styles to this file, and also import other style files */
+
+$backgroundBody: #e8e8e8;
+$backgroundContent: white;
+$boxDadosSelected: #002b50;
+$dadoChave: gray;
+$dadoValor: #082432;
+$numeroId: #4cd2d1;
+$sombra: grey;
+
+$gridGap: 1.5rem;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: $backgroundBody;
+  margin: 0;
+}
+
+.conteudo {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.listBox {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: $gridGap;
+}
+
+.boxDados {
+  background-color: $backgroundContent;
+  padding: 2rem;
+}
+
+.boxMaior {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin-top: $gridGap;
+}
+
+.boxDadosSelected {
+  background-color: $boxDadosSelected;
+}
+
+.dadoChave {
+  color: $dadoChave;
+  font-weight: normal;
+}
+
+.dadoValor {
+  color: $dadoValor;
+  font-weight: bold;
+}
+
+.whiteText {
+  color:white;
+}
+
+.sombra {
+  -webkit-box-shadow: 0px 5px 5px 0px $sombra;
+  -moz-box-shadow: 0px 5px 5px 0px $sombra;
+  box-shadow: 0px 5px 5px 0px $sombra;
+}
+
+.roundImg {
+  border-radius: 50%;
+}
+
+.ladoLado {
+  display: inline-block;
+  margin: 1.5rem;
+  height: 100%;
+}
+
+.numeroPos {
+  background-color: $numeroId;
+  position: relative;
+  right: 0;
+  top: 0;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.absolute {
+  position: absolute;
+}
