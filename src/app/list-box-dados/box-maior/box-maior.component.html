@@ -1,19 +1,15 @@
 <div class="flexCenter">
   <div class="chaveValor">
-    <img class="roundImg" [src]="imgSource" alt="Foto">
+    <img class="roundImg profileImg" [src]="imgSource" alt="Foto">
   </div>
   <div class="dadoChave chaveValor chaveValorEsq">
-    <div>NOME: </div>
-    <br>
-    <div>CARGO: </div>
-    <br>
-    <div>IDADE: </div>
+    <div class="linha">NOME: </div>
+    <div class="linha">CARGO: </div>
+    <div class="linha">IDADE: </div>
   </div>
   <div class="dadoValor chaveValor chaveValorDir">
-    <div>{{dados.nome}}</div>
-    <br>
-    <div>{{dados.cargo}}</div>
-    <br>
-    <div>{{dados.idade}}</div>
+    <div class="linha">{{dados.nome}}</div>
+    <div class="linha">{{dados.cargo}}</div>
+    <div class="linha">{{dados.idade}}</div>
   </div>
 </div>

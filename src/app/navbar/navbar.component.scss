@@ -6,18 +6,20 @@ $logomarca: #002a50;
   display: flex;
   align-items: center;
   background-image: linear-gradient(to right, $gradienteInicio, $gradienteFim);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .main-nav {
   display: flex;
   margin-left: auto;
+  margin-right: 2rem;
 }
 
 .main-nav ul {
   display: flex;
   list-style: none;
+  margin: 0;
 }
 
 .main-nav li {
